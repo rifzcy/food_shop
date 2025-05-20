@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="menustyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <a href="index.html" class="logo">CyNo</a>
+            <button class="mobile-menu-toggle" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-button">View Cart</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Our Delicious Menu</h1>
+            <p>Explore our wide variety of mouthwatering dishes prepared with fresh ingredients and love.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-image">
+                    <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A" alt="Pizza">
+                </div>
+                <div class="food-info">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Classic pepperoni pizza with mozzarella cheese and tomato sauce.</p>
+                    <span class="price">$10.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="food-card">
+                <div class="food-image">
+                    <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A" alt="Burger">
+                </div>
+                <div class="food-info">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy beef patty with lettuce, tomato, cheese, and special sauce.</p>
+                    <span class="price">$7.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="food-card">
+                <div class="food-image">
+                    <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A" alt="Pasta">
+                </div>
+                <div class="food-info">
+                    <h3>Fettuccine Alfredo</h3>
+                    <p>Creamy fettuccine pasta with parmesan cheese and garlic.</p>
+                    <span class="price">$9.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="cta-section">
+            <h2>Hungry? Order Now!</h2>
+            <p>Get your favorite dishes delivered to your doorstep.</p>
+            <a href="order.html" class="cta-button">Place Order</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 CyNo. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>123 Food Street, Tasty City, TC 45678</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

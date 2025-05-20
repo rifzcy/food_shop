@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CyNo</title>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <a href="index.html" class="logo">CyNo</a>
+            <button class="mobile-menu-toggle" id="menuToggle">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-button">View Cart</a>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Your Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="cart-container">
+            <div class="cart-header">
+                <div>Item</div>
+                <div style="text-align:center">Quantity</div>
+                <div style="text-align:center">Price</div>
+                <div style="text-align:center">Subtotal</div>
+            </div>
+            
+            <div class="cart-item">
+                <div class="item-info">
+                    <div class="item-image">
+                        <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A" alt="Pizza">
+                    </div>
+                    <div>
+                        <div class="item-name">Pepperoni Pizza</div>
+                        <div class="item-description">Classic pepperoni pizza with mozzarella cheese</div>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <button>−</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <div class="price">$10.00</div>
+                <div class="subtotal">$10.00</div>
+            </div>
+            
+            <div class="cart-item">
+                <div class="item-info">
+                    <div class="item-image">
+                        <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A" alt="Burger">
+                    </div>
+                    <div>
+                        <div class="item-name">Classic Burger</div>
+                        <div class="item-description">Juicy beef patty with lettuce and tomato</div>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <button>−</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <div class="price">$7.00</div>
+                <div class="subtotal">$7.00</div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <div class="total-label">Total</div>
+                    <div class="total-price">$17.00</div>
+                </div>
+                <div class="cart-actions">
+                    <a href="menu.html" class="continue-shopping">Continue Shopping</a>
+                    <a href="order.html" class="checkout-button">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- If cart is empty, show this instead
+        <div class="cart-container">
+            <div class="empty-cart">
+                <img src="/api/placeholder/120/120" alt="Empty Cart">
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added any items to your cart yet.</p>
+                <a href="menu.html" class="checkout-button">Browse Menu</a>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 CyNo. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>123 Food Street, Tasty City, TC 45678</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
